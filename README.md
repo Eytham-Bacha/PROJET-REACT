@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projet Yuk'AFPA avec REACT
 
-## Getting Started
+## I.
+Pour ce projet j'ai utilisé Next.
 
-First, run the development server:
+## Explication du code utilisé
+Pour commencer, dans le layout  j'ai simplement mis le contenu de ma page appelé "Navbar".  
+Ensuite j'ai mis le contenu qui apparaît en tant que "children".
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Page "Navbar"
+Dans cette page j'ai utilisé Bootstrap pour créer une navbar dans laquelle j'ai intégré le nom de mon site "Yuk'AFPA", mon logo ainsi que mon slogan.  
+Ensuite j'ai créer un formulaire qui inclu la barre de recherche ainsi que le bouton pour rechercher.
+Pour finir j'ai mis un lien vers une autre page "Qui Sommes Nous ?"  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+ 
+Pour cette page j'ai utilisé un fichier scss "globals.scss" dans lequel j'ai modifié la couleur de la navbar, j'ai mis en italique le slogan et j'ai ajouté des animations pour que mon logo ce balance de gauche a droite ainsi qu'une autre animation qui permet qu'une fois que l'utilisateur a cliqué sur le bouton rechercher, le logo effectue un tour sur lui même avant de partir vers le haut comme une fusée.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Page d'acceuil 
+Pour la page d'acceuil j'ai simplement mis un "h1" avec le nom "Yuk'AFPA.  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### Page "Qui somme nous"
+Cette page est uniquement statique j'ai utilisé que du HTML et des CSS simple.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Page Produit 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Cette page est dynamique.  
+J'ai utilisé "!product" pour que si le code barre entré par l'utilisateur n'est pas connu de la base de données de l'API d'open Food Facts alors la page renvoyé comportera un texte prévenant l'utilisateur que son code barre est invalide.  
+J'ai ajouté une image qui apparaît avec une animation qui fait passé la couleur de l'arrière plan de rouge a jaune avec un effet de zoom durant 3 secondes.  
+Si le code barre est valide alors toute les informations de la page changeront est seront reliés a son code barre.

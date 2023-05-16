@@ -1,0 +1,55 @@
+.navbar {
+    background-color:rgb(255, 229, 202);
+    
+}
+
+
+h3 {
+    font-style: italic;
+}   
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+  .img {
+    position: relative;
+    animation: swing 1.5s ease-in-out infinite;
+    transform-origin: top center;
+  }
+  
+  .animate {
+    animation: spinrocket 1s ease-in-out infinite; 
+    //
+  }
+  
+ 
+  
+  .img {
+    transition: all 1s;
+  }
+
+
+  @keyframes swing {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(15deg); 
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  @keyframes spinrocket {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: translateY(-500px) rotate(-90deg);
+    }
+   
+  }
